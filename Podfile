@@ -1,5 +1,2 @@
 platform :ios, '7.0' 
 pod 'Objective-LevelDB'
-pod 'ProtocolBuffers'
-pod 'Mantle'
-pod 'JSONModel'

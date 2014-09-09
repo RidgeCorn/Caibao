@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-#import "PerformanceTests.h"
+#import "Caibao.h"
+#import "CBTestsModel.h"
+
+#define CBTESTOBJECTSCOUNT 10000
+#define CBTESTOBJECTSIZE 1
 
 
 @interface CaibaoPerformanceTests : XCTestCase
@@ -30,13 +34,6 @@
 
 - (void)setUp {
     [super setUp];
-    [[[CBStorageManager sharedManager] databaseForClass:[Tests class]] setEncoder: ^NSData * (LevelDBKey * key, id object) {
-        return object;
-    }];
-    
-    [[[CBStorageManager sharedManager] databaseForClass:[Tests class]] setDecoder: ^id (LevelDBKey * key, id data) {
-        return data;
-    }];
     
     [self configTestsData];
 }

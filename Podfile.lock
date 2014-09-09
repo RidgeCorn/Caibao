@@ -1,25 +1,14 @@
 PODS:
-  - JSONModel (1.0.1)
-  - Mantle (1.5):
-    - Mantle/extobjc
-  - Mantle/extobjc (1.5)
   - Objective-LevelDB (2.1.0):
     - Objective-LevelDB/leveldb
     - Objective-LevelDB/leveldb
   - Objective-LevelDB/leveldb (2.1.0):
     - Objective-LevelDB/leveldb
-  - ProtocolBuffers (1.9.1)
 
 DEPENDENCIES:
-  - JSONModel
-  - Mantle
   - Objective-LevelDB
-  - ProtocolBuffers
 
 SPEC CHECKSUMS:
-  JSONModel: 634100aaacbd89811bc8a03da209356e5989c569
-  Mantle: c67a7e45e14196ed42b2a7cbb98ff6a9920e6b92
   Objective-LevelDB: 19fc204589601881402fd0f985f45e20ca92e60b
-  ProtocolBuffers: 590247bc4ad15e69d52acfcd0b1512485f051e2e
 
 COCOAPODS: 0.33.1

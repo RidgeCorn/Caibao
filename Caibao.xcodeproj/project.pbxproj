@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6E157EE6199349760046A202 /* CaibaoPerformanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E157EE5199349760046A202 /* CaibaoPerformanceTests.m */; };
-		6E18B874199B343C00A32390 /* TestModel.pb.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18B873199B343C00A32390 /* TestModel.pb.m */; };
 		6E1ACD7819AB84FA003BAD4E /* CBDataExplorer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1ACD7719AB84FA003BAD4E /* CBDataExplorer.m */; };
 		6E1ACD7919AB84FA003BAD4E /* CBDataExplorer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1ACD7719AB84FA003BAD4E /* CBDataExplorer.m */; };
 		6E1BDEFC1991F55600BB37C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1BDEFB1991F55600BB37C7 /* main.m */; };
@@ -29,25 +28,6 @@
 		6E4A1BA819B4A73C0034D327 /* CBDataDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4A1BA619B4A73C0034D327 /* CBDataDetailViewController.m */; };
 		6E4A1BAB19B55DBC0034D327 /* CBDataModifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4A1BAA19B55DBC0034D327 /* CBDataModifyViewController.m */; };
 		6E4A1BAC19B55DBC0034D327 /* CBDataModifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4A1BAA19B55DBC0034D327 /* CBDataModifyViewController.m */; };
-		6E53F562199C8C1A006AD203 /* NSKeyedArchiverPerformanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F561199C8C1A006AD203 /* NSKeyedArchiverPerformanceTests.m */; };
-		6E53F564199C8C5C006AD203 /* ProtobufPerformanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F563199C8C5C006AD203 /* ProtobufPerformanceTests.m */; };
-		6E53F567199C8F99006AD203 /* NSJSONSerializationPerformanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F566199C8F99006AD203 /* NSJSONSerializationPerformanceTests.m */; };
-		6E53F57A199C9503006AD203 /* JMTest3GModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F56B199C9503006AD203 /* JMTest3GModel.m */; };
-		6E53F57B199C9503006AD203 /* JMTest3GSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F56D199C9503006AD203 /* JMTest3GSModel.m */; };
-		6E53F57C199C9503006AD203 /* JMTest4Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F56F199C9503006AD203 /* JMTest4Model.m */; };
-		6E53F57D199C9503006AD203 /* JMTest4SModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F571199C9503006AD203 /* JMTest4SModel.m */; };
-		6E53F57E199C9503006AD203 /* JMTest5Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F573199C9503006AD203 /* JMTest5Model.m */; };
-		6E53F57F199C9503006AD203 /* JMTest5S_5CModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F575199C9503006AD203 /* JMTest5S_5CModel.m */; };
-		6E53F580199C9503006AD203 /* JMTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F577199C9503006AD203 /* JMTestModel.m */; };
-		6E53F581199C9503006AD203 /* JMTestsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F579199C9503006AD203 /* JMTestsModel.m */; };
-		6E53F592199C957B006AD203 /* MTTest3GModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F583199C957B006AD203 /* MTTest3GModel.m */; };
-		6E53F593199C957B006AD203 /* MTTest3GSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F585199C957B006AD203 /* MTTest3GSModel.m */; };
-		6E53F594199C957B006AD203 /* MTTest4Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F587199C957B006AD203 /* MTTest4Model.m */; };
-		6E53F595199C957B006AD203 /* MTTest4SModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F589199C957B006AD203 /* MTTest4SModel.m */; };
-		6E53F596199C957B006AD203 /* MTTest5Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F58B199C957B006AD203 /* MTTest5Model.m */; };
-		6E53F597199C957B006AD203 /* MTTest5S_5CModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F58D199C957B006AD203 /* MTTest5S_5CModel.m */; };
-		6E53F598199C957B006AD203 /* MTTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F58F199C957B006AD203 /* MTTestModel.m */; };
-		6E53F599199C957B006AD203 /* MTTestsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F591199C957B006AD203 /* MTTestsModel.m */; };
 		6E7D7F4519B6E8B800B98C8F /* CBDataListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7D7F4419B6E8B800B98C8F /* CBDataListView.m */; };
 		6E7D7F4619B6E8B800B98C8F /* CBDataListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7D7F4419B6E8B800B98C8F /* CBDataListView.m */; };
 		6E7D7F4919B6EA7000B98C8F /* CBDatabaseStatisticsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7D7F4819B6EA7000B98C8F /* CBDatabaseStatisticsView.m */; };
@@ -94,8 +74,6 @@
 /* Begin PBXFileReference section */
 		3DE6F83D248F4C92ACA01080 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E157EE5199349760046A202 /* CaibaoPerformanceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaibaoPerformanceTests.m; sourceTree = "<group>"; };
-		6E18B872199B343C00A32390 /* TestModel.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.pb.h; sourceTree = "<group>"; };
-		6E18B873199B343C00A32390 /* TestModel.pb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.pb.m; sourceTree = "<group>"; };
 		6E1ACD7619AB84FA003BAD4E /* CBDataExplorer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBDataExplorer.h; sourceTree = "<group>"; };
 		6E1ACD7719AB84FA003BAD4E /* CBDataExplorer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBDataExplorer.m; sourceTree = "<group>"; };
 		6E1BDEF61991F55600BB37C7 /* CaibaoExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaibaoExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,42 +105,6 @@
 		6E4A1BA619B4A73C0034D327 /* CBDataDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBDataDetailViewController.m; sourceTree = "<group>"; };
 		6E4A1BA919B55DBC0034D327 /* CBDataModifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBDataModifyViewController.h; sourceTree = "<group>"; };
 		6E4A1BAA19B55DBC0034D327 /* CBDataModifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBDataModifyViewController.m; sourceTree = "<group>"; };
-		6E53F561199C8C1A006AD203 /* NSKeyedArchiverPerformanceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSKeyedArchiverPerformanceTests.m; sourceTree = "<group>"; };
-		6E53F563199C8C5C006AD203 /* ProtobufPerformanceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtobufPerformanceTests.m; sourceTree = "<group>"; };
-		6E53F565199C8CBA006AD203 /* PerformanceTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PerformanceTests.h; sourceTree = "<group>"; };
-		6E53F566199C8F99006AD203 /* NSJSONSerializationPerformanceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSJSONSerializationPerformanceTests.m; sourceTree = "<group>"; };
-		6E53F56A199C9503006AD203 /* JMTest3GModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTest3GModel.h; sourceTree = "<group>"; };
-		6E53F56B199C9503006AD203 /* JMTest3GModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTest3GModel.m; sourceTree = "<group>"; };
-		6E53F56C199C9503006AD203 /* JMTest3GSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTest3GSModel.h; sourceTree = "<group>"; };
-		6E53F56D199C9503006AD203 /* JMTest3GSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTest3GSModel.m; sourceTree = "<group>"; };
-		6E53F56E199C9503006AD203 /* JMTest4Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTest4Model.h; sourceTree = "<group>"; };
-		6E53F56F199C9503006AD203 /* JMTest4Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTest4Model.m; sourceTree = "<group>"; };
-		6E53F570199C9503006AD203 /* JMTest4SModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTest4SModel.h; sourceTree = "<group>"; };
-		6E53F571199C9503006AD203 /* JMTest4SModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTest4SModel.m; sourceTree = "<group>"; };
-		6E53F572199C9503006AD203 /* JMTest5Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTest5Model.h; sourceTree = "<group>"; };
-		6E53F573199C9503006AD203 /* JMTest5Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTest5Model.m; sourceTree = "<group>"; };
-		6E53F574199C9503006AD203 /* JMTest5S_5CModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTest5S_5CModel.h; sourceTree = "<group>"; };
-		6E53F575199C9503006AD203 /* JMTest5S_5CModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTest5S_5CModel.m; sourceTree = "<group>"; };
-		6E53F576199C9503006AD203 /* JMTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTestModel.h; sourceTree = "<group>"; };
-		6E53F577199C9503006AD203 /* JMTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTestModel.m; sourceTree = "<group>"; };
-		6E53F578199C9503006AD203 /* JMTestsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTestsModel.h; sourceTree = "<group>"; };
-		6E53F579199C9503006AD203 /* JMTestsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTestsModel.m; sourceTree = "<group>"; };
-		6E53F582199C957B006AD203 /* MTTest3GModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTest3GModel.h; sourceTree = "<group>"; };
-		6E53F583199C957B006AD203 /* MTTest3GModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTest3GModel.m; sourceTree = "<group>"; };
-		6E53F584199C957B006AD203 /* MTTest3GSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTest3GSModel.h; sourceTree = "<group>"; };
-		6E53F585199C957B006AD203 /* MTTest3GSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTest3GSModel.m; sourceTree = "<group>"; };
-		6E53F586199C957B006AD203 /* MTTest4Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTest4Model.h; sourceTree = "<group>"; };
-		6E53F587199C957B006AD203 /* MTTest4Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTest4Model.m; sourceTree = "<group>"; };
-		6E53F588199C957B006AD203 /* MTTest4SModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTest4SModel.h; sourceTree = "<group>"; };
-		6E53F589199C957B006AD203 /* MTTest4SModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTest4SModel.m; sourceTree = "<group>"; };
-		6E53F58A199C957B006AD203 /* MTTest5Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTest5Model.h; sourceTree = "<group>"; };
-		6E53F58B199C957B006AD203 /* MTTest5Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTest5Model.m; sourceTree = "<group>"; };
-		6E53F58C199C957B006AD203 /* MTTest5S_5CModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTest5S_5CModel.h; sourceTree = "<group>"; };
-		6E53F58D199C957B006AD203 /* MTTest5S_5CModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTest5S_5CModel.m; sourceTree = "<group>"; };
-		6E53F58E199C957B006AD203 /* MTTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTestModel.h; sourceTree = "<group>"; };
-		6E53F58F199C957B006AD203 /* MTTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTestModel.m; sourceTree = "<group>"; };
-		6E53F590199C957B006AD203 /* MTTestsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTestsModel.h; sourceTree = "<group>"; };
-		6E53F591199C957B006AD203 /* MTTestsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTestsModel.m; sourceTree = "<group>"; };
 		6E7D7F4319B6E8B800B98C8F /* CBDataListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBDataListView.h; sourceTree = "<group>"; };
 		6E7D7F4419B6E8B800B98C8F /* CBDataListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBDataListView.m; sourceTree = "<group>"; };
 		6E7D7F4719B6EA7000B98C8F /* CBDatabaseStatisticsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBDatabaseStatisticsView.h; sourceTree = "<group>"; };
@@ -348,15 +290,6 @@
 			path = CBModels;
 			sourceTree = "<group>";
 		};
-		6E53F55C199C86C6006AD203 /* ProtobufModels */ = {
-			isa = PBXGroup;
-			children = (
-				6E18B872199B343C00A32390 /* TestModel.pb.h */,
-				6E18B873199B343C00A32390 /* TestModel.pb.m */,
-			);
-			path = ProtobufModels;
-			sourceTree = "<group>";
-		};
 		6E53F55F199C8B2E006AD203 /* Logical */ = {
 			isa = PBXGroup;
 			children = (
@@ -368,59 +301,9 @@
 		6E53F560199C8B3D006AD203 /* Performance */ = {
 			isa = PBXGroup;
 			children = (
-				6E53F565199C8CBA006AD203 /* PerformanceTests.h */,
 				6E157EE5199349760046A202 /* CaibaoPerformanceTests.m */,
-				6E53F561199C8C1A006AD203 /* NSKeyedArchiverPerformanceTests.m */,
-				6E53F563199C8C5C006AD203 /* ProtobufPerformanceTests.m */,
-				6E53F566199C8F99006AD203 /* NSJSONSerializationPerformanceTests.m */,
 			);
 			name = Performance;
-			sourceTree = "<group>";
-		};
-		6E53F568199C9330006AD203 /* MantleModels */ = {
-			isa = PBXGroup;
-			children = (
-				6E53F582199C957B006AD203 /* MTTest3GModel.h */,
-				6E53F583199C957B006AD203 /* MTTest3GModel.m */,
-				6E53F584199C957B006AD203 /* MTTest3GSModel.h */,
-				6E53F585199C957B006AD203 /* MTTest3GSModel.m */,
-				6E53F586199C957B006AD203 /* MTTest4Model.h */,
-				6E53F587199C957B006AD203 /* MTTest4Model.m */,
-				6E53F588199C957B006AD203 /* MTTest4SModel.h */,
-				6E53F589199C957B006AD203 /* MTTest4SModel.m */,
-				6E53F58A199C957B006AD203 /* MTTest5Model.h */,
-				6E53F58B199C957B006AD203 /* MTTest5Model.m */,
-				6E53F58C199C957B006AD203 /* MTTest5S_5CModel.h */,
-				6E53F58D199C957B006AD203 /* MTTest5S_5CModel.m */,
-				6E53F58E199C957B006AD203 /* MTTestModel.h */,
-				6E53F58F199C957B006AD203 /* MTTestModel.m */,
-				6E53F590199C957B006AD203 /* MTTestsModel.h */,
-				6E53F591199C957B006AD203 /* MTTestsModel.m */,
-			);
-			path = MantleModels;
-			sourceTree = "<group>";
-		};
-		6E53F569199C94DA006AD203 /* JSONModels */ = {
-			isa = PBXGroup;
-			children = (
-				6E53F56A199C9503006AD203 /* JMTest3GModel.h */,
-				6E53F56B199C9503006AD203 /* JMTest3GModel.m */,
-				6E53F56C199C9503006AD203 /* JMTest3GSModel.h */,
-				6E53F56D199C9503006AD203 /* JMTest3GSModel.m */,
-				6E53F56E199C9503006AD203 /* JMTest4Model.h */,
-				6E53F56F199C9503006AD203 /* JMTest4Model.m */,
-				6E53F570199C9503006AD203 /* JMTest4SModel.h */,
-				6E53F571199C9503006AD203 /* JMTest4SModel.m */,
-				6E53F572199C9503006AD203 /* JMTest5Model.h */,
-				6E53F573199C9503006AD203 /* JMTest5Model.m */,
-				6E53F574199C9503006AD203 /* JMTest5S_5CModel.h */,
-				6E53F575199C9503006AD203 /* JMTest5S_5CModel.m */,
-				6E53F576199C9503006AD203 /* JMTestModel.h */,
-				6E53F577199C9503006AD203 /* JMTestModel.m */,
-				6E53F578199C9503006AD203 /* JMTestsModel.h */,
-				6E53F579199C9503006AD203 /* JMTestsModel.m */,
-			);
-			path = JSONModels;
 			sourceTree = "<group>";
 		};
 		6E7D7F4119B6E83A00B98C8F /* Views */ = {
@@ -472,9 +355,6 @@
 		6EE6D3AB199209B200498286 /* TestModels */ = {
 			isa = PBXGroup;
 			children = (
-				6E53F569199C94DA006AD203 /* JSONModels */,
-				6E53F568199C9330006AD203 /* MantleModels */,
-				6E53F55C199C86C6006AD203 /* ProtobufModels */,
 				6E53F55B199C86AE006AD203 /* CBModels */,
 			);
 			path = TestModels;
@@ -683,36 +563,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E53F599199C957B006AD203 /* MTTestsModel.m in Sources */,
 				6EE6D3C4199209B200498286 /* CBTestsModel.m in Sources */,
-				6E53F595199C957B006AD203 /* MTTest4SModel.m in Sources */,
 				6E157EE6199349760046A202 /* CaibaoPerformanceTests.m in Sources */,
-				6E53F564199C8C5C006AD203 /* ProtobufPerformanceTests.m in Sources */,
 				6EE6D3C1199209B200498286 /* CBTest5Model.m in Sources */,
 				6EE6D3BE199209B200498286 /* CBTest3GSModel.m in Sources */,
 				6EE6D3BD199209B200498286 /* CBTest3GModel.m in Sources */,
-				6E53F593199C957B006AD203 /* MTTest3GSModel.m in Sources */,
-				6E18B874199B343C00A32390 /* TestModel.pb.m in Sources */,
-				6E53F598199C957B006AD203 /* MTTestModel.m in Sources */,
 				6EDC6AB719A196E200BDA32A /* CBModel.m in Sources */,
-				6E53F596199C957B006AD203 /* MTTest5Model.m in Sources */,
-				6E53F597199C957B006AD203 /* MTTest5S_5CModel.m in Sources */,
-				6E53F580199C9503006AD203 /* JMTestModel.m in Sources */,
 				6EE6D3C2199209B200498286 /* CBTest5S_5CModel.m in Sources */,
-				6E53F592199C957B006AD203 /* MTTest3GModel.m in Sources */,
-				6E53F567199C8F99006AD203 /* NSJSONSerializationPerformanceTests.m in Sources */,
-				6E53F57A199C9503006AD203 /* JMTest3GModel.m in Sources */,
-				6E53F57F199C9503006AD203 /* JMTest5S_5CModel.m in Sources */,
 				6EE6D3C0199209B200498286 /* CBTest4SModel.m in Sources */,
-				6E53F57D199C9503006AD203 /* JMTest4SModel.m in Sources */,
-				6E53F581199C9503006AD203 /* JMTestsModel.m in Sources */,
-				6E53F562199C8C1A006AD203 /* NSKeyedArchiverPerformanceTests.m in Sources */,
-				6E53F57C199C9503006AD203 /* JMTest4Model.m in Sources */,
-				6E53F594199C957B006AD203 /* MTTest4Model.m in Sources */,
 				6EE6D3BC199209B200498286 /* CaibaoLogicalTests.m in Sources */,
 				6EE6D3C3199209B200498286 /* CBTestModel.m in Sources */,
-				6E53F57E199C9503006AD203 /* JMTest5Model.m in Sources */,
-				6E53F57B199C9503006AD203 /* JMTest3GSModel.m in Sources */,
 				6EE6D3BF199209B200498286 /* CBTest4Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
