@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "Note.h"
 
+typedef void(^SaveNoteBlock)(id object);
+
 @interface AddNoteViewController : UIViewController
+@property (nonatomic, copy) SaveNoteBlock saveNoteBlock;
 
 - (instancetype)initWithNote:(Note *)note;
 

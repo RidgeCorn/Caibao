@@ -8,13 +8,13 @@
 
 #import "ExampleTableViewController.h"
 #import "AddNoteViewController.h"
-#import <FLEXManager.h>
 #import "Caibao.h"
 #import "Note.h"
 
 @interface ExampleTableViewController ()
 
 @property (nonatomic) NSMutableArray *notes;
+@property (nonatomic) BOOL reloadData;
 
 @end
 
@@ -22,13 +22,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     [self setTitle:@"Caibao Example"];
     
     [self.tableView setTableFooterView:[UIView new]];
 
     [self.navigationItem setLeftBarButtonItem:({
-        UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithTitle:@"FLEX" style:UIBarButtonItemStylePlain target:self action:@selector(openFLEX)];
+        UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithTitle:@"Explorer" style:UIBarButtonItemStylePlain target:self action:@selector(openExplorer)];
         buttonItem;
     })];
     
@@ -40,8 +40,15 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self loadNotes];
-    [self.tableView reloadData];
+    
+    if (_reloadData || !_notes) {
+        _reloadData = NO;
+        _notes = [@[] mutableCopy];
+        
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            [self loadNotes];
+        });
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -98,11 +105,11 @@
 #pragma mark - load notes
 
 - (void)loadNotes {
-    _notes = [[[CBStorageManager sharedManager] allObjectsForClass:[Note class]] mutableCopy];
-    
-    _notes = [[_notes sortedArrayUsingComparator:^NSComparisonResult(Note *note1, Note *note2) {
+    [_notes addObjectsFromArray:[[[CBStorageManager sharedManager] allObjectsForClass:[Note class]] sortedArrayUsingComparator:^NSComparisonResult(Note *note1, Note *note2) {
         return [note1.date timeIntervalSince1970] < [note2.date timeIntervalSince1970];
-    }] mutableCopy];
+    }]];
+    
+    [self.tableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
 }
 
 #pragma mark - add note
@@ -113,13 +120,16 @@
     }
     
     AddNoteViewController *controller = [[AddNoteViewController alloc] initWithNote:note];
+    [controller setSaveNoteBlock:^(id note) {
+        _reloadData = YES;
+    }];
     
     [self presentViewController:[[UINavigationController alloc] initWithRootViewController:controller] animated:YES completion:nil];
 }
 
-#pragma mark - Flex debug
-- (void)openFLEX {
-    [[FLEXManager sharedManager] showExplorer];
+#pragma mark - Data debug
+- (void)openExplorer {
+    [[CBStorageManager sharedManager] showExplorer];
 }
 
 @end

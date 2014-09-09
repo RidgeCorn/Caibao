@@ -8,6 +8,7 @@
 
 #import "CBStorageManager.h"
 #import <objc/runtime.h>
+#import "CBDataExplorer.h"
 
 
 static char _storageKey;
@@ -454,6 +455,10 @@ static NSString * CBGenDatabaseStorageKey(const id obj) {
 
 + (BOOL)isObject:(id)obj1 equalTo:(id)obj2 {
     return CBIsObjsEquals(obj1, obj2, NO);
+}
+
+- (void)showExplorer {
+    [[[UIApplication sharedApplication] keyWindow].rootViewController presentViewController:[[UINavigationController alloc] initWithRootViewController:[[CBDataExplorer alloc] initWithDatabases:_LDBPool]] animated:YES completion:nil];
 }
 
 @end

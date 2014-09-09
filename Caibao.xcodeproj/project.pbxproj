@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6E157EE6199349760046A202 /* CaibaoPerformanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E157EE5199349760046A202 /* CaibaoPerformanceTests.m */; };
 		6E18B874199B343C00A32390 /* TestModel.pb.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18B873199B343C00A32390 /* TestModel.pb.m */; };
+		6E1ACD7819AB84FA003BAD4E /* CBDataExplorer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1ACD7719AB84FA003BAD4E /* CBDataExplorer.m */; };
+		6E1ACD7919AB84FA003BAD4E /* CBDataExplorer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1ACD7719AB84FA003BAD4E /* CBDataExplorer.m */; };
 		6E1BDEFC1991F55600BB37C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1BDEFB1991F55600BB37C7 /* main.m */; };
 		6E1BDEFF1991F55600BB37C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1BDEFE1991F55600BB37C7 /* AppDelegate.m */; };
 		6E1BDF081991F55600BB37C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E1BDF061991F55600BB37C7 /* Main.storyboard */; };
@@ -21,6 +23,12 @@
 		6E4136381997A02F00A0F7BB /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4136371997A02F00A0F7BB /* Note.m */; };
 		6E41363C1997A3D300A0F7BB /* AddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E41363A1997A3D300A0F7BB /* AddNoteViewController.m */; };
 		6E41363D1997A3D300A0F7BB /* AddNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E41363B1997A3D300A0F7BB /* AddNoteViewController.xib */; };
+		6E4A1BA319B45C3B0034D327 /* CBDataListsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4A1BA219B45C3B0034D327 /* CBDataListsViewController.m */; };
+		6E4A1BA419B45C3B0034D327 /* CBDataListsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4A1BA219B45C3B0034D327 /* CBDataListsViewController.m */; };
+		6E4A1BA719B4A73C0034D327 /* CBDataDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4A1BA619B4A73C0034D327 /* CBDataDetailViewController.m */; };
+		6E4A1BA819B4A73C0034D327 /* CBDataDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4A1BA619B4A73C0034D327 /* CBDataDetailViewController.m */; };
+		6E4A1BAB19B55DBC0034D327 /* CBDataModifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4A1BAA19B55DBC0034D327 /* CBDataModifyViewController.m */; };
+		6E4A1BAC19B55DBC0034D327 /* CBDataModifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4A1BAA19B55DBC0034D327 /* CBDataModifyViewController.m */; };
 		6E53F562199C8C1A006AD203 /* NSKeyedArchiverPerformanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F561199C8C1A006AD203 /* NSKeyedArchiverPerformanceTests.m */; };
 		6E53F564199C8C5C006AD203 /* ProtobufPerformanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F563199C8C5C006AD203 /* ProtobufPerformanceTests.m */; };
 		6E53F567199C8F99006AD203 /* NSJSONSerializationPerformanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F566199C8F99006AD203 /* NSJSONSerializationPerformanceTests.m */; };
@@ -40,8 +48,14 @@
 		6E53F597199C957B006AD203 /* MTTest5S_5CModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F58D199C957B006AD203 /* MTTest5S_5CModel.m */; };
 		6E53F598199C957B006AD203 /* MTTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F58F199C957B006AD203 /* MTTestModel.m */; };
 		6E53F599199C957B006AD203 /* MTTestsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53F591199C957B006AD203 /* MTTestsModel.m */; };
-		6ECDB6C2199222FF00E0F468 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECDB6C1199222FF00E0F468 /* libPods.a */; };
-		6ED476E31992086200F00B67 /* libCaibao.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1C2A2A1992037C00AAE67E /* libCaibao.a */; };
+		6E7D7F4519B6E8B800B98C8F /* CBDataListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7D7F4419B6E8B800B98C8F /* CBDataListView.m */; };
+		6E7D7F4619B6E8B800B98C8F /* CBDataListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7D7F4419B6E8B800B98C8F /* CBDataListView.m */; };
+		6E7D7F4919B6EA7000B98C8F /* CBDatabaseStatisticsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7D7F4819B6EA7000B98C8F /* CBDatabaseStatisticsView.m */; };
+		6E7D7F4A19B6EA7000B98C8F /* CBDatabaseStatisticsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7D7F4819B6EA7000B98C8F /* CBDatabaseStatisticsView.m */; };
+		6E7D7F4C19B6F01000B98C8F /* CBDatabaseStatisticsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E7D7F4B19B6F01000B98C8F /* CBDatabaseStatisticsView.xib */; };
+		6E7D7F4F19B6FD8B00B98C8F /* StatisticModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7D7F4E19B6FD8B00B98C8F /* StatisticModel.m */; };
+		6E7D7F5019B6FD8B00B98C8F /* StatisticModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7D7F4E19B6FD8B00B98C8F /* StatisticModel.m */; };
+		6E7D7F5319B7123000B98C8F /* CBDataListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E7D7F5219B7123000B98C8F /* CBDataListView.xib */; };
 		6EDC6AB719A196E200BDA32A /* CBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1C2A71199204D300AAE67E /* CBModel.m */; };
 		6EE6D3BC199209B200498286 /* CaibaoLogicalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE6D3AA199209B200498286 /* CaibaoLogicalTests.m */; };
 		6EE6D3BD199209B200498286 /* CBTest3GModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE6D3AD199209B200498286 /* CBTest3GModel.m */; };
@@ -56,77 +70,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6E1C2A90199207E700AAE67E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E1BDEEE1991F55600BB37C7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6E1BDEF51991F55600BB37C7;
-			remoteInfo = CaibaoExample;
-		};
-		6E1C2A921992091800AAE67E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E1BDEEE1991F55600BB37C7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6E1BDEF51991F55600BB37C7;
-			remoteInfo = CaibaoExample;
-		};
-		6E1C2A941992091900AAE67E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E1BDEEE1991F55600BB37C7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6E1BDEF51991F55600BB37C7;
-			remoteInfo = CaibaoExample;
-		};
-		6ED476E41992086200F00B67 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E1BDEEE1991F55600BB37C7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6E1C2A291992037C00AAE67E;
-			remoteInfo = Caibao;
-		};
-		6ED476E61992086200F00B67 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E1BDEEE1991F55600BB37C7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6E1C2A291992037C00AAE67E;
-			remoteInfo = Caibao;
-		};
-		6ED476E8199208A400F00B67 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E1BDEEE1991F55600BB37C7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6E1C2A291992037C00AAE67E;
-			remoteInfo = Caibao;
-		};
-		6ED476EA199208AB00F00B67 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E1BDEEE1991F55600BB37C7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6E1C2A291992037C00AAE67E;
-			remoteInfo = Caibao;
-		};
-		6ED476EC199208B000F00B67 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E1BDEEE1991F55600BB37C7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6E1C2A291992037C00AAE67E;
-			remoteInfo = Caibao;
-		};
-		6ED476EE199208F700F00B67 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E1BDEEE1991F55600BB37C7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6E1C2A291992037C00AAE67E;
-			remoteInfo = Caibao;
-		};
-		6ED476F0199208F700F00B67 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E1BDEEE1991F55600BB37C7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6E1C2A291992037C00AAE67E;
-			remoteInfo = Caibao;
-		};
-		6ED476F21992090200F00B67 /* PBXContainerItemProxy */ = {
+		6EF4E05419B5B9A800C96080 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6E1BDEEE1991F55600BB37C7 /* Project object */;
 			proxyType = 1;
@@ -149,10 +93,11 @@
 
 /* Begin PBXFileReference section */
 		3DE6F83D248F4C92ACA01080 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E081EDF19921D3600C8DE88 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		6E157EE5199349760046A202 /* CaibaoPerformanceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaibaoPerformanceTests.m; sourceTree = "<group>"; };
 		6E18B872199B343C00A32390 /* TestModel.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.pb.h; sourceTree = "<group>"; };
 		6E18B873199B343C00A32390 /* TestModel.pb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.pb.m; sourceTree = "<group>"; };
+		6E1ACD7619AB84FA003BAD4E /* CBDataExplorer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBDataExplorer.h; sourceTree = "<group>"; };
+		6E1ACD7719AB84FA003BAD4E /* CBDataExplorer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBDataExplorer.m; sourceTree = "<group>"; };
 		6E1BDEF61991F55600BB37C7 /* CaibaoExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaibaoExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E1BDEFA1991F55600BB37C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E1BDEFB1991F55600BB37C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -160,8 +105,6 @@
 		6E1BDEFE1991F55600BB37C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6E1BDF071991F55600BB37C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E1BDF091991F55600BB37C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6E1C2A221991FE9900AAE67E /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
-		6E1C2A241991FEFF00AAE67E /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		6E1C2A2A1992037C00AAE67E /* libCaibao.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCaibao.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E1C2A341992037C00AAE67E /* CaibaoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaibaoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E1C2A371992037D00AAE67E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -178,6 +121,12 @@
 		6E4136391997A3D300A0F7BB /* AddNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNoteViewController.h; sourceTree = "<group>"; };
 		6E41363A1997A3D300A0F7BB /* AddNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNoteViewController.m; sourceTree = "<group>"; };
 		6E41363B1997A3D300A0F7BB /* AddNoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNoteViewController.xib; sourceTree = "<group>"; };
+		6E4A1BA119B45C3B0034D327 /* CBDataListsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBDataListsViewController.h; sourceTree = "<group>"; };
+		6E4A1BA219B45C3B0034D327 /* CBDataListsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBDataListsViewController.m; sourceTree = "<group>"; };
+		6E4A1BA519B4A73C0034D327 /* CBDataDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBDataDetailViewController.h; sourceTree = "<group>"; };
+		6E4A1BA619B4A73C0034D327 /* CBDataDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBDataDetailViewController.m; sourceTree = "<group>"; };
+		6E4A1BA919B55DBC0034D327 /* CBDataModifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBDataModifyViewController.h; sourceTree = "<group>"; };
+		6E4A1BAA19B55DBC0034D327 /* CBDataModifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBDataModifyViewController.m; sourceTree = "<group>"; };
 		6E53F561199C8C1A006AD203 /* NSKeyedArchiverPerformanceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSKeyedArchiverPerformanceTests.m; sourceTree = "<group>"; };
 		6E53F563199C8C5C006AD203 /* ProtobufPerformanceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtobufPerformanceTests.m; sourceTree = "<group>"; };
 		6E53F565199C8CBA006AD203 /* PerformanceTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PerformanceTests.h; sourceTree = "<group>"; };
@@ -214,7 +163,14 @@
 		6E53F58F199C957B006AD203 /* MTTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTestModel.m; sourceTree = "<group>"; };
 		6E53F590199C957B006AD203 /* MTTestsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTestsModel.h; sourceTree = "<group>"; };
 		6E53F591199C957B006AD203 /* MTTestsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTestsModel.m; sourceTree = "<group>"; };
-		6ECDB6C1199222FF00E0F468 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		6E7D7F4319B6E8B800B98C8F /* CBDataListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBDataListView.h; sourceTree = "<group>"; };
+		6E7D7F4419B6E8B800B98C8F /* CBDataListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBDataListView.m; sourceTree = "<group>"; };
+		6E7D7F4719B6EA7000B98C8F /* CBDatabaseStatisticsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBDatabaseStatisticsView.h; sourceTree = "<group>"; };
+		6E7D7F4819B6EA7000B98C8F /* CBDatabaseStatisticsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBDatabaseStatisticsView.m; sourceTree = "<group>"; };
+		6E7D7F4B19B6F01000B98C8F /* CBDatabaseStatisticsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBDatabaseStatisticsView.xib; sourceTree = "<group>"; };
+		6E7D7F4D19B6FD8B00B98C8F /* StatisticModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticModel.h; sourceTree = "<group>"; };
+		6E7D7F4E19B6FD8B00B98C8F /* StatisticModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticModel.m; sourceTree = "<group>"; };
+		6E7D7F5219B7123000B98C8F /* CBDataListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBDataListView.xib; sourceTree = "<group>"; };
 		6EE6D3AA199209B200498286 /* CaibaoLogicalTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaibaoLogicalTests.m; sourceTree = "<group>"; };
 		6EE6D3AC199209B200498286 /* CBTest3GModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBTest3GModel.h; sourceTree = "<group>"; };
 		6EE6D3AD199209B200498286 /* CBTest3GModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBTest3GModel.m; sourceTree = "<group>"; };
@@ -248,7 +204,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6ECDB6C2199222FF00E0F468 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,13 +211,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6ED476E31992086200F00B67 /* libCaibao.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E1ACD7519AB848B003BAD4E /* Explorer */ = {
+			isa = PBXGroup;
+			children = (
+				6E7D7F5119B6FD9500B98C8F /* Models */,
+				6E7D7F4219B6E84300B98C8F /* Controllers */,
+				6E7D7F4119B6E83A00B98C8F /* Views */,
+			);
+			path = Explorer;
+			sourceTree = "<group>";
+		};
 		6E1BDEED1991F55600BB37C7 = {
 			isa = PBXGroup;
 			children = (
@@ -317,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				6E1C2A68199204D300AAE67E /* Addition */,
+				6E1ACD7519AB848B003BAD4E /* Explorer */,
 				6E1C2A6C199204D300AAE67E /* Manager */,
 			);
 			path = Caibao;
@@ -458,6 +423,43 @@
 			path = JSONModels;
 			sourceTree = "<group>";
 		};
+		6E7D7F4119B6E83A00B98C8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E7D7F4319B6E8B800B98C8F /* CBDataListView.h */,
+				6E7D7F4419B6E8B800B98C8F /* CBDataListView.m */,
+				6E7D7F5219B7123000B98C8F /* CBDataListView.xib */,
+				6E7D7F4719B6EA7000B98C8F /* CBDatabaseStatisticsView.h */,
+				6E7D7F4819B6EA7000B98C8F /* CBDatabaseStatisticsView.m */,
+				6E7D7F4B19B6F01000B98C8F /* CBDatabaseStatisticsView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E7D7F4219B6E84300B98C8F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E1ACD7619AB84FA003BAD4E /* CBDataExplorer.h */,
+				6E1ACD7719AB84FA003BAD4E /* CBDataExplorer.m */,
+				6E4A1BA119B45C3B0034D327 /* CBDataListsViewController.h */,
+				6E4A1BA219B45C3B0034D327 /* CBDataListsViewController.m */,
+				6E4A1BA519B4A73C0034D327 /* CBDataDetailViewController.h */,
+				6E4A1BA619B4A73C0034D327 /* CBDataDetailViewController.m */,
+				6E4A1BA919B55DBC0034D327 /* CBDataModifyViewController.h */,
+				6E4A1BAA19B55DBC0034D327 /* CBDataModifyViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6E7D7F5119B6FD9500B98C8F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E7D7F4D19B6FD8B00B98C8F /* StatisticModel.h */,
+				6E7D7F4E19B6FD8B00B98C8F /* StatisticModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		6EE6D3A9199209B200498286 /* TestCases */ = {
 			isa = PBXGroup;
 			children = (
@@ -481,10 +483,6 @@
 		9B602903504846EF95010C3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6ECDB6C1199222FF00E0F468 /* libPods.a */,
-				6E081EDF19921D3600C8DE88 /* libPods.a */,
-				6E1C2A241991FEFF00AAE67E /* libPods.a */,
-				6E1C2A221991FE9900AAE67E /* libPods.a */,
 				3DE6F83D248F4C92ACA01080 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -540,17 +538,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				6E1C2A91199207E700AAE67E /* PBXTargetDependency */,
-				6ED476E51992086200F00B67 /* PBXTargetDependency */,
-				6ED476E71992086200F00B67 /* PBXTargetDependency */,
-				6ED476E9199208A400F00B67 /* PBXTargetDependency */,
-				6ED476EB199208AB00F00B67 /* PBXTargetDependency */,
-				6ED476ED199208B000F00B67 /* PBXTargetDependency */,
-				6ED476EF199208F700F00B67 /* PBXTargetDependency */,
-				6ED476F1199208F700F00B67 /* PBXTargetDependency */,
-				6ED476F31992090200F00B67 /* PBXTargetDependency */,
-				6E1C2A931992091800AAE67E /* PBXTargetDependency */,
-				6E1C2A951992091900AAE67E /* PBXTargetDependency */,
+				6EF4E05519B5B9A800C96080 /* PBXTargetDependency */,
 			);
 			name = CaibaoTests;
 			productName = CaibaoTests;
@@ -604,6 +592,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E1BDF081991F55600BB37C7 /* Main.storyboard in Resources */,
+				6E7D7F4C19B6F01000B98C8F /* CBDatabaseStatisticsView.xib in Resources */,
+				6E7D7F5319B7123000B98C8F /* CBDataListView.xib in Resources */,
 				6E41363D1997A3D300A0F7BB /* AddNoteViewController.xib in Resources */,
 				6E1BDF0A1991F55600BB37C7 /* Images.xcassets in Resources */,
 			);
@@ -657,11 +647,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E41363C1997A3D300A0F7BB /* AddNoteViewController.m in Sources */,
+				6E4A1BA719B4A73C0034D327 /* CBDataDetailViewController.m in Sources */,
+				6E7D7F4519B6E8B800B98C8F /* CBDataListView.m in Sources */,
 				6E41363519979FF400A0F7BB /* ExampleTableViewController.m in Sources */,
 				6E1C2A73199204D300AAE67E /* CBStorageManager.m in Sources */,
+				6E1ACD7819AB84FA003BAD4E /* CBDataExplorer.m in Sources */,
+				6E7D7F4919B6EA7000B98C8F /* CBDatabaseStatisticsView.m in Sources */,
 				6E1BDEFF1991F55600BB37C7 /* AppDelegate.m in Sources */,
 				6E1C2A72199204D300AAE67E /* Caibao.m in Sources */,
 				6E4136381997A02F00A0F7BB /* Note.m in Sources */,
+				6E7D7F4F19B6FD8B00B98C8F /* StatisticModel.m in Sources */,
+				6E4A1BAB19B55DBC0034D327 /* CBDataModifyViewController.m in Sources */,
+				6E4A1BA319B45C3B0034D327 /* CBDataListsViewController.m in Sources */,
 				6E1BDEFC1991F55600BB37C7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -670,8 +667,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E4A1BA419B45C3B0034D327 /* CBDataListsViewController.m in Sources */,
+				6E7D7F5019B6FD8B00B98C8F /* StatisticModel.m in Sources */,
+				6E4A1BA819B4A73C0034D327 /* CBDataDetailViewController.m in Sources */,
+				6E1ACD7919AB84FA003BAD4E /* CBDataExplorer.m in Sources */,
 				6E1C2A76199206E800AAE67E /* CBStorageManager.m in Sources */,
+				6E4A1BAC19B55DBC0034D327 /* CBDataModifyViewController.m in Sources */,
+				6E7D7F4A19B6EA7000B98C8F /* CBDatabaseStatisticsView.m in Sources */,
 				6E1C2A75199206E200AAE67E /* Caibao.m in Sources */,
+				6E7D7F4619B6E8B800B98C8F /* CBDataListView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -716,60 +720,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6E1C2A91199207E700AAE67E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6E1BDEF51991F55600BB37C7 /* CaibaoExample */;
-			targetProxy = 6E1C2A90199207E700AAE67E /* PBXContainerItemProxy */;
-		};
-		6E1C2A931992091800AAE67E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6E1BDEF51991F55600BB37C7 /* CaibaoExample */;
-			targetProxy = 6E1C2A921992091800AAE67E /* PBXContainerItemProxy */;
-		};
-		6E1C2A951992091900AAE67E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6E1BDEF51991F55600BB37C7 /* CaibaoExample */;
-			targetProxy = 6E1C2A941992091900AAE67E /* PBXContainerItemProxy */;
-		};
-		6ED476E51992086200F00B67 /* PBXTargetDependency */ = {
+		6EF4E05519B5B9A800C96080 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6E1C2A291992037C00AAE67E /* Caibao */;
-			targetProxy = 6ED476E41992086200F00B67 /* PBXContainerItemProxy */;
-		};
-		6ED476E71992086200F00B67 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6E1C2A291992037C00AAE67E /* Caibao */;
-			targetProxy = 6ED476E61992086200F00B67 /* PBXContainerItemProxy */;
-		};
-		6ED476E9199208A400F00B67 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6E1C2A291992037C00AAE67E /* Caibao */;
-			targetProxy = 6ED476E8199208A400F00B67 /* PBXContainerItemProxy */;
-		};
-		6ED476EB199208AB00F00B67 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6E1C2A291992037C00AAE67E /* Caibao */;
-			targetProxy = 6ED476EA199208AB00F00B67 /* PBXContainerItemProxy */;
-		};
-		6ED476ED199208B000F00B67 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6E1C2A291992037C00AAE67E /* Caibao */;
-			targetProxy = 6ED476EC199208B000F00B67 /* PBXContainerItemProxy */;
-		};
-		6ED476EF199208F700F00B67 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6E1C2A291992037C00AAE67E /* Caibao */;
-			targetProxy = 6ED476EE199208F700F00B67 /* PBXContainerItemProxy */;
-		};
-		6ED476F1199208F700F00B67 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6E1C2A291992037C00AAE67E /* Caibao */;
-			targetProxy = 6ED476F0199208F700F00B67 /* PBXContainerItemProxy */;
-		};
-		6ED476F31992090200F00B67 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6E1C2A291992037C00AAE67E /* Caibao */;
-			targetProxy = 6ED476F21992090200F00B67 /* PBXContainerItemProxy */;
+			targetProxy = 6EF4E05419B5B9A800C96080 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -869,6 +823,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/CaibaoExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -883,6 +838,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/CaibaoExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -933,6 +889,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -951,6 +908,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = CaibaoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

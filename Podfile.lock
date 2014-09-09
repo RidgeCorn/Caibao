@@ -1,6 +1,5 @@
 PODS:
-  - FLEX (1.1.0)
-  - JSONModel (0.13.0)
+  - JSONModel (1.0.1)
   - Mantle (1.5):
     - Mantle/extobjc
   - Mantle/extobjc (1.5)
@@ -9,20 +8,18 @@ PODS:
     - Objective-LevelDB/leveldb
   - Objective-LevelDB/leveldb (2.1.0):
     - Objective-LevelDB/leveldb
-  - ProtocolBuffers (1.9)
+  - ProtocolBuffers (1.9.1)
 
 DEPENDENCIES:
-  - FLEX
   - JSONModel
   - Mantle
   - Objective-LevelDB
   - ProtocolBuffers
 
 SPEC CHECKSUMS:
-  FLEX: fa5e81b7b25ba64afe4fad14deb27d4b95efd75e
-  JSONModel: 62ea96b49ea18a8b91ef89c249dba291d8601d82
+  JSONModel: 634100aaacbd89811bc8a03da209356e5989c569
   Mantle: c67a7e45e14196ed42b2a7cbb98ff6a9920e6b92
   Objective-LevelDB: 19fc204589601881402fd0f985f45e20ca92e60b
-  ProtocolBuffers: 957094698fc1b7f7761ca75cee902e07fc0f5624
+  ProtocolBuffers: 590247bc4ad15e69d52acfcd0b1512485f051e2e
 
 COCOAPODS: 0.33.1

@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/RidgeCorn/Caibao.git", :tag => s.version.to_s }
   s.source_files  = 'Caibao/**/*.{h,m}'
 
+  s.resources = ['Caibao/**/*.{xib}']
   s.requires_arc = true
 
   s.dependency 'Objective-LevelDB'

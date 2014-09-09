@@ -47,6 +47,8 @@
     if (_note && _note.content) {
         [_noteTextView setText:_note.content];
     }
+    
+    [_noteTextView becomeFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,6 +57,8 @@
 }
 
 -(void)dismiss {
+    [self.view endEditing:YES];
+    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -65,8 +69,12 @@
 
     _note.content = _noteTextView.text;
     _note.date = [NSDate date];
-
+    
     [_note cb_save];
+    
+    if (_saveNoteBlock) {
+        _saveNoteBlock(_note);
+    }
     
     [self dismiss];
 }
