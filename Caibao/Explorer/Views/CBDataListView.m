@@ -328,7 +328,7 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(_separatorLineWidth, 212.f, [self _contentListViewCellWidth:indexPath.row] - _separatorLineWidth, _rowHeaderHeight)];
-        [label setTag:(indexPath.row + 1) * 1007];
+        [label setTag:101];
         [label setNumberOfLines:1024];
         [label setTextAlignment:NSTextAlignmentCenter];
         label.backgroundColor = _headerBGColor;
@@ -337,8 +337,8 @@
     }
     cell.transform = CGAffineTransformMakeRotation(M_PI / 2);
     
-    ((UILabel *)[cell.contentView viewWithTag:(indexPath.row + 1) * 1007]).text = [[_datasource arrayDataForRowHeaderInListView:self] objectAtIndex:indexPath.row];
-    
+    ((UILabel *)[cell.contentView viewWithTag:101]).text = [[_datasource arrayDataForRowHeaderInListView:self] objectAtIndex:indexPath.row];
+        
     return cell;
 }
 
