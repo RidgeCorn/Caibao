@@ -34,14 +34,15 @@
     
     [self.view setBackgroundColor:[UIColor whiteColor]];
     
-    if ([_object isKindOfClass:[NSString class]]) {
+    if ([_object isKindOfClass:[NSString class]] || [_object isKindOfClass:[NSNumber class]] || [_object isKindOfClass:[NSURL class]]) {
         [self.view addSubview:({
+            NSString *string = [_object isKindOfClass:[NSString class]] ? _object : [_object isKindOfClass:[NSNumber class]] ? [_object stringValue] : [_object isKindOfClass:[NSURL class]] ? [_object relativeString] : @"";
             CGRect frame = self.view.frame;
             
             frame.size.height /= 2;
             
             UITextView *textView = [[UITextView alloc] initWithFrame:frame];
-            [textView setText:_object];
+            [textView setText:string];
             [textView setTag:10000];
             [textView becomeFirstResponder];
             
@@ -67,7 +68,7 @@
             frame.size.height /= 2;
             
             UILabel *notSupportLabel = [[UILabel alloc] initWithFrame:frame];
-            [notSupportLabel setText:[NSString stringWithFormat:@"%@\n\nModify this object is currently \nNOT SUPPORT.", _object]];
+            [notSupportLabel setText:[NSString stringWithFormat:@"%@\n\nModify this object (%@) is currently \nNOT SUPPORT.", [_object class], _object]];
             [notSupportLabel setNumberOfLines:1024];
             [notSupportLabel setEnabled:NO];
             [notSupportLabel setTextAlignment:NSTextAlignmentCenter];
@@ -89,6 +90,10 @@
     
     if ([_object isKindOfClass:[NSString class]]) {
         _modifiedValue = ((UITextView *)[self.view viewWithTag:10000]).text;
+    } else if ([_object isKindOfClass:[NSNumber class]]) {
+        _modifiedValue = @([((UITextView *)[self.view viewWithTag:10000]).text integerValue]);
+    } else if ([_object isKindOfClass:[NSURL class]]) {
+        _modifiedValue = [NSURL URLWithString:((UITextView *)[self.view viewWithTag:10000]).text];
     } else if ([_object isKindOfClass:[NSDate class]]) {
         _modifiedValue = ((UIDatePicker *)[self.view viewWithTag:10001]).date;
     }
