@@ -70,7 +70,7 @@
 - (void)removeAllObjectsForClass:(Class)cls;
 
 
-+ (NSArray *)allPropertyKeysForObject:(id)obj;
++ (NSDictionary *)allPropertiesForObject:(id)obj;
 + (BOOL)isObject:(id)obj1 equalTo:(id)obj2;
 + (BOOL)isObject:(id)obj1 similarTo:(id)obj2;
 

@@ -13,16 +13,18 @@
 @property (nonatomic) id object;
 @property (nonatomic) id modifiedValue;
 @property (nonatomic) NSString *name;
+@property (nonatomic) NSString *attribute;
 
 @end
 
 @implementation CBDataModifyViewController
 
-- (instancetype)initWithObject:(id)object name:(NSString *)name {
+- (instancetype)initWithObject:(id)object name:(NSString *)name attribute:(NSString *)attribute {
     if (self = [super init]) {
         _object = object;
         _modifiedValue = _object;
         _name = name;
+        _attribute = attribute;
     }
     
     return self;

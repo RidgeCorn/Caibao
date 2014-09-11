@@ -14,7 +14,7 @@
 
 @property (nonatomic) UITableView *tableView;
 @property (nonatomic) id object;
-@property (nonatomic) NSArray *properties;
+@property (nonatomic) NSDictionary *properties;
 
 @end
 
@@ -23,7 +23,7 @@
 - (instancetype)initWithObject:(id)object {
     if (self = [super init]) {
         _object = object;
-        _properties = [CBStorageManager allPropertyKeysForObject:_object];
+        _properties = [CBStorageManager allPropertiesForObject:_object];
     }
     
     return self;
@@ -69,7 +69,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
     
-    NSString *key = _properties[indexPath.row];
+    NSString *key = [_properties allKeys][indexPath.row];
     
     [cell.textLabel setText:key];
     [cell.detailTextLabel setText:[[_object valueForKeyPath:key] description]];
@@ -80,8 +80,8 @@
 #pragma mark - Table View Delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *key = _properties[indexPath.row];
-    CBDataModifyViewController *modifyController = [[CBDataModifyViewController alloc] initWithObject:[_object valueForKeyPath:key] name:key];
+    NSString *key = [_properties allKeys][indexPath.row];
+    CBDataModifyViewController *modifyController = [[CBDataModifyViewController alloc] initWithObject:[_object valueForKeyPath:key] name:key attribute:[_properties valueForKey:key]];
     
     [modifyController setSaveValueBlock:^(id value) {
         [_object setValue:value forKeyPath:key];

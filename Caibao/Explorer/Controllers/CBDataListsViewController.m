@@ -17,7 +17,7 @@
 @interface CBDataListsViewController () <CBDataListViewDataSource, CBDataListViewDelegate>
 
 @property (nonatomic) NSString *name;
-@property (nonatomic) NSArray *properties;
+@property (nonatomic) NSDictionary *properties;
 @property (nonatomic) NSMutableArray *objectIDs;
 @property (nonatomic) NSMutableArray *objectValues;
 @property (nonatomic) CBDataListView *listView;
@@ -111,7 +111,7 @@
 - (void)loadData {
     _objects = [[CBStorageManager sharedManager] allObjectsForClass:NSClassFromString(_name)];
     
-    _properties = [CBStorageManager allPropertyKeysForObject:[NSClassFromString(_name) new]];
+    _properties = [CBStorageManager allPropertiesForObject:[NSClassFromString(_name) new]];
     
     _objectIDs = [@[] mutableCopy];
     
@@ -147,7 +147,7 @@
 }
 
 - (NSArray *)arrayDataForRowHeaderInListView:(CBDataListView *)listView {
-    return _properties ?: @[];
+    return [_properties allKeys] ?: @[];
 }
 
 - (NSArray *)arrayDataForColumnHeaderInListView:(CBDataListView *)listView InSection:(NSUInteger)section {

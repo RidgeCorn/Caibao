@@ -23,36 +23,35 @@ static NSString *_defaultDatabasePrefix = @"cb";
 static LevelDBOptions _defaultDatabaseOptions;
 
 
-static NSArray * CBAllPropertyKeys(const id obj) {
-    static NSMutableDictionary *cachedPropertyKeys;
+static NSMutableDictionary * CBAllProperties(const id obj) {
+    static NSMutableDictionary *cachedProperties;
     
-    if ( !cachedPropertyKeys) {
-        cachedPropertyKeys = [@{} mutableCopy];
+    if ( !cachedProperties) {
+        cachedProperties = [@{} mutableCopy];
     }
     
-    NSMutableArray *propertyKeys = [cachedPropertyKeys objectForKey:NSStringFromClass([obj class])];
+    NSMutableDictionary *allProperties = [cachedProperties objectForKey:NSStringFromClass([obj class])];
     
-    if ( !propertyKeys) {
-        propertyKeys = [@[] mutableCopy];
+    if ( !allProperties) {
+        allProperties = [@{} mutableCopy];
         u_int count;
-        objc_property_t *properties= class_copyPropertyList([obj class], &count);
+        objc_property_t *objProperties= class_copyPropertyList([obj class], &count);
         
         for (int i = 0; i < count; i++) {
-            const char *property = property_getName(properties[i]);
-            NSString *propertyKey = [NSString  stringWithCString:property encoding:NSUTF8StringEncoding];
-            [propertyKeys addObject:propertyKey];
+            [allProperties setObject:[NSString stringWithCString:property_getAttributes(objProperties[i]) encoding:NSUTF8StringEncoding]
+                              forKey:[NSString stringWithCString:property_getName(objProperties[i]) encoding:NSUTF8StringEncoding]];
         }
         
-        [cachedPropertyKeys setObject:propertyKeys forKey:NSStringFromClass([obj class])];
+        [cachedProperties setObject:allProperties forKey:NSStringFromClass([obj class])];
     }
 
-    return propertyKeys;
+    return allProperties;
 }
 
 static BOOL CBIsObjsEquals(const id obj1, const id obj2, const BOOL ignoreNilValue) {
     BOOL isEqual = YES;
     
-    NSArray *propertyKeys = CBAllPropertyKeys(obj1);
+    NSArray *propertyKeys = [CBAllProperties(obj1) allKeys];
 
     if ([propertyKeys count]) {
         for (NSString *key in propertyKeys) {
@@ -445,8 +444,8 @@ static NSString * CBGenDatabaseStorageKey(const id obj) {
 
 #pragma mark - Tool Kit
 
-+ (NSArray *)allPropertyKeysForObject:(id)obj {
-    return CBAllPropertyKeys(obj);
++ (NSDictionary *)allPropertiesForObject:(id)obj {
+    return CBAllProperties(obj);
 }
 
 + (BOOL)isObject:(id)obj1 similarTo:(id)obj2 {

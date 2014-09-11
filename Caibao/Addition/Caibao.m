@@ -57,15 +57,15 @@
     return [CBStorageManager isObject:self similarTo:object];
 }
 
-- (NSArray *)cb_allPropertyKeys {
-    return [CBStorageManager allPropertyKeysForObject:self];
+- (NSDictionary *)cb_allProperties {
+    return [CBStorageManager allPropertiesForObject:self];
 }
 
 #pragma mark - NSCoding
 
 - (id)cb_initWithCoder:(NSCoder *)aDecoder {
     if (self) {
-        for (NSString *propertyKey in [self cb_allPropertyKeys]) {
+        for (NSString *propertyKey in [[self cb_allProperties] allKeys]) {
             [self setValue:[aDecoder decodeObjectForKey:propertyKey] forKeyPath:propertyKey];
         }
     } else {
@@ -76,7 +76,7 @@
 }
 
 - (void)cb_encodeWithCoder:(NSCoder *)aCoder {
-    for (NSString *propertyKey in [self cb_allPropertyKeys]) {
+    for (NSString *propertyKey in [[self cb_allProperties] allKeys]) {
         [aCoder encodeObject:[self valueForKeyPath:propertyKey] forKey:propertyKey];
     }
 }

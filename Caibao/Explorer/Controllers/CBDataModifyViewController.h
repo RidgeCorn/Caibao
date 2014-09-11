@@ -12,6 +12,6 @@ typedef void(^CBSaveModifiedObjectBlock)(id object);
 @interface CBDataModifyViewController : UIViewController
 @property (nonatomic, copy) CBSaveModifiedObjectBlock saveValueBlock;
 
-- (instancetype)initWithObject:(id)object name:(NSString *)name;
+- (instancetype)initWithObject:(id)object name:(NSString *)name attribute:(NSString *)attribute;
 
 @end
