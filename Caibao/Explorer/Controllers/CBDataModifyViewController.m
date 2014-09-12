@@ -14,6 +14,7 @@
 @property (nonatomic) id modifiedValue;
 @property (nonatomic) NSString *name;
 @property (nonatomic) NSString *attribute;
+@property (nonatomic) Class objectClass;
 
 @end
 
@@ -22,9 +23,25 @@
 - (instancetype)initWithObject:(id)object name:(NSString *)name attribute:(NSString *)attribute {
     if (self = [super init]) {
         _object = object;
-        _modifiedValue = _object;
         _name = name;
         _attribute = attribute;
+        NSString *tmpAttriName = [_attribute componentsSeparatedByString:@","][0];
+        
+        _objectClass = NSClassFromString([tmpAttriName substringWithRange:NSMakeRange(3, [tmpAttriName length]-4)]);
+        
+        if ( !_object) {
+            _object = [[_objectClass alloc] init];
+            
+            if ( !_object) {
+                if ([_objectClass instancesRespondToSelector:@selector(initWithString:)]) {
+                    _object = [[_objectClass alloc] initWithString:@""];
+                } else if ([_objectClass instancesRespondToSelector:@selector(initWithBool:)]) {
+                    _object = [[_objectClass alloc] initWithBool:NO];
+                }
+            }
+        }
+        
+        _modifiedValue = _object;
     }
     
     return self;
