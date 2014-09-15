@@ -358,7 +358,9 @@ static NSString * CBGenDatabaseStorageKey(const id obj) {
     
     NSMutableArray *objects = [@[] mutableCopy];
     
-    for (id key in [results allKeys]) {
+    for (id key in [[results allKeys] sortedArrayUsingComparator:^NSComparisonResult(NSString *s1, NSString *s2) {
+        return [s1 compare:s2] == NSOrderedAscending;
+    }]) {
         id obj = [results objectForKey:key];
         CBSetStorageKeyToObject(key, obj);
         [objects addObject:obj];
