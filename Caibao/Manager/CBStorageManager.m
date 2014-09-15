@@ -8,7 +8,6 @@
 
 #import "CBStorageManager.h"
 #import <objc/runtime.h>
-#import "CBDataExplorer.h"
 
 
 static char _storageKey;
@@ -456,8 +455,27 @@ static NSString * CBGenDatabaseStorageKey(const id obj) {
     return CBIsObjsEquals(obj1, obj2, NO);
 }
 
-- (void)showExplorer {
-    [[[UIApplication sharedApplication] keyWindow].rootViewController presentViewController:[[UINavigationController alloc] initWithRootViewController:[[CBDataExplorer alloc] initWithDatabases:_LDBPool]] animated:YES completion:nil];
++ (NSString *)descriptionForObject:(id)object withAttribute:(NSString *)attri {
+    NSString *description = [object description];
+    
+    NSString *tmpAttriName = [attri componentsSeparatedByString:@","][0];
+    NSString *typeName = @"";
+    
+    if ( ![tmpAttriName hasPrefix:@"T@"]) {
+        typeName = [tmpAttriName substringWithRange:NSMakeRange(1, [tmpAttriName length]-1)];
+    }
+    
+    if ([typeName isEqualToString:@"c"]) {
+        char c[] = " ";
+        c[0] = [object charValue];
+        description = [NSString stringWithUTF8String:c];
+    } else if ([typeName isEqualToString:@"C"]) {
+        char c[] = " ";
+        c[0] = [object unsignedCharValue];
+        description = [NSString stringWithUTF8String:c];
+    }
+    
+    return description ?: @"";
 }
 
 @end

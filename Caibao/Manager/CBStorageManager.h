@@ -15,7 +15,7 @@
 @property (nonatomic, getter = databaseDirectory, setter = setDatabaseDirectory:) NSString *databaseDirectory; // Default is "NSCachesDirectory()"
 @property (nonatomic, getter = databaseGroupName, setter = setDatabaseGroupName:) NSString *databaseGroupName; // Default is "com.ridgecorn.CaibaoStorage.default"
 @property (nonatomic, getter = databaseOptions, setter = setDatabaseOptions:) LevelDBOptions _defaultDatabaseOptions; // Default using [LevelDB makeOptions]
-
+@property (nonatomic, readonly, getter=databasesPool) NSMutableDictionary *LDBPool;
 
 + (instancetype)sharedManager;
 
@@ -73,7 +73,6 @@
 + (NSDictionary *)allPropertiesForObject:(id)obj;
 + (BOOL)isObject:(id)obj1 equalTo:(id)obj2;
 + (BOOL)isObject:(id)obj1 similarTo:(id)obj2;
-
-- (void)showExplorer;
++ (NSString *)descriptionForObject:(id)object withAttribute:(NSString *)attri;
 
 @end

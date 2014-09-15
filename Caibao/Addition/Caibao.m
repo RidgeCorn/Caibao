@@ -66,7 +66,12 @@
 - (id)cb_initWithCoder:(NSCoder *)aDecoder {
     if (self) {
         for (NSString *propertyKey in [[self cb_allProperties] allKeys]) {
-            [self setValue:[aDecoder decodeObjectForKey:propertyKey] forKeyPath:propertyKey];
+            @try {
+                [self setValue:[aDecoder decodeObjectForKey:propertyKey] forKeyPath:propertyKey];
+            }
+            @catch (NSException *exception) {
+                [self setValue:@(false) forKeyPath:propertyKey];
+            }
         }
     } else {
         NSAssert(NO, @"Please call [super init] first!");
@@ -79,6 +84,19 @@
     for (NSString *propertyKey in [[self cb_allProperties] allKeys]) {
         [aCoder encodeObject:[self valueForKeyPath:propertyKey] forKey:propertyKey];
     }
+}
+
+#pragma mark - Description
+
+- (NSString *)cb_descriptionForProperty:(NSDictionary *)property {
+    NSString *description = [self description];
+    
+    if (property && [property count] > 0) {
+        NSString *key = [property allKeys][0];        
+        description = [CBStorageManager descriptionForObject:[self valueForKeyPath:key] withAttribute:[property valueForKey:key]];
+    }
+    
+    return description;
 }
 
 @end

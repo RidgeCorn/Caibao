@@ -7,7 +7,7 @@
 //
 
 #import "CBDataDetailViewController.h"
-#import "CBStorageManager.h"
+#import "Caibao.h"
 #import "CBDataModifyViewController.h"
 
 @interface CBDataDetailViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -72,7 +72,7 @@
     NSString *key = [_properties allKeys][indexPath.row];
     
     [cell.textLabel setText:key];
-    [cell.detailTextLabel setText:[[_object valueForKeyPath:key] description]];
+    [cell.detailTextLabel setText:[_object cb_descriptionForProperty:@{key: [_properties valueForKey:key]}]];
     
     return cell ? : [UITableViewCell new];
 }

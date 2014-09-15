@@ -10,6 +10,7 @@
 #import "AddNoteViewController.h"
 #import "Caibao.h"
 #import "Note.h"
+#import "CBDataExplorer.h"
 
 @interface ExampleTableViewController ()
 
@@ -129,7 +130,7 @@
 
 #pragma mark - Data debug
 - (void)openExplorer {
-    [[CBStorageManager sharedManager] showExplorer];
+    [CBDataExplorer showExplorer];
 }
 
 @end

@@ -31,4 +31,6 @@
 - (id)cb_initWithCoder:(NSCoder *)aDecoder;
 - (void)cb_encodeWithCoder:(NSCoder *)aCoder;
 
+- (NSString *)cb_descriptionForProperty:(NSDictionary *)property;
+
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "CBDataListsViewController.h"
-#import "CBStorageManager.h"
+#import "Caibao.h"
 #import "CBDataListView.h"
 #import "CBDataDetailViewController.h"
 #import "CBDatabaseStatisticsView.h"
@@ -124,8 +124,8 @@
         
         values = [@[] mutableCopy];
         
-        for (NSString *property in _properties) {
-            [values addObject:[object valueForKeyPath:property] ?: @""];
+        for (NSString *key in [_properties allKeys]) {
+            [values addObject:[object cb_descriptionForProperty:@{key:[_properties valueForKey:key]}]];
         }
         
         [_objectValues addObject:values];

@@ -12,4 +12,6 @@
 
 - (instancetype)initWithDatabases:(NSDictionary *)databases;
 
++ (void)showExplorer;
+
 @end

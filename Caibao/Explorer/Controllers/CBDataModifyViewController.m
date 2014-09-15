@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 RidgeCorn. All rights reserved.
 //
 
+#import "Caibao.h"
 #import "CBDataModifyViewController.h"
 
 @interface CBDataModifyViewController ()
@@ -27,9 +28,11 @@
         _attribute = attribute;
         NSString *tmpAttriName = [_attribute componentsSeparatedByString:@","][0];
         
-        _objectClass = NSClassFromString([tmpAttriName substringWithRange:NSMakeRange(3, [tmpAttriName length]-4)]);
+        if ([tmpAttriName hasPrefix:@"T@"]) {
+            _objectClass = NSClassFromString([tmpAttriName substringWithRange:NSMakeRange(3, [tmpAttriName length]-4)]);
+        }
         
-        if ( !_object) {
+        if ( !_object && _objectClass) {
             _object = [[_objectClass alloc] init];
             
             if ( !_object) {
@@ -55,13 +58,12 @@
     
     if ([_object isKindOfClass:[NSString class]] || [_object isKindOfClass:[NSNumber class]] || [_object isKindOfClass:[NSURL class]]) {
         [self.view addSubview:({
-            NSString *string = [_object isKindOfClass:[NSString class]] ? _object : [_object isKindOfClass:[NSNumber class]] ? [_object stringValue] : [_object isKindOfClass:[NSURL class]] ? [_object relativeString] : @"";
             CGRect frame = self.view.frame;
             
             frame.size.height /= 2;
             
             UITextView *textView = [[UITextView alloc] initWithFrame:frame];
-            [textView setText:string];
+            [textView setText:[CBStorageManager descriptionForObject:_object withAttribute:_attribute]];
             [textView setTag:10000];
             [textView becomeFirstResponder];
             
@@ -110,7 +112,25 @@
     if ([_object isKindOfClass:[NSString class]]) {
         _modifiedValue = ((UITextView *)[self.view viewWithTag:10000]).text;
     } else if ([_object isKindOfClass:[NSNumber class]]) {
-        _modifiedValue = @([((UITextView *)[self.view viewWithTag:10000]).text integerValue]);
+        NSString *tmpAttriName = [_attribute componentsSeparatedByString:@","][0];
+        NSString *typeName = @"";
+        if ( ![tmpAttriName hasPrefix:@"T@"]) {
+            typeName = [tmpAttriName substringWithRange:NSMakeRange(1, [tmpAttriName length]-1)];
+        }
+        NSString *text = ((UITextView *)[self.view viewWithTag:10000]).text;
+        if ([typeName isEqualToString:@"i"] || [typeName isEqualToString:@"s"] || [typeName isEqualToString:@"l"] || [typeName isEqualToString:@"I"] || [typeName isEqualToString:@"S"] || [typeName isEqualToString:@"L"]) {
+            _modifiedValue = @([text integerValue]);
+        } else if ([typeName isEqualToString:@"q"] || [typeName isEqualToString:@"Q"]) {
+            _modifiedValue = @([text longLongValue]);
+        } else if ([typeName isEqualToString:@"f"]) {
+            _modifiedValue = @([text floatValue]);
+        } else if ([typeName isEqualToString:@"d"]) {
+            _modifiedValue = @([text doubleValue]);
+        } else if ([typeName isEqualToString:@"B"]) {
+            _modifiedValue = @([text boolValue]);
+        } else if ([typeName isEqualToString:@"c"] || [typeName isEqualToString:@"C"]) {
+            _modifiedValue = @([text characterAtIndex:0]);
+        }
     } else if ([_object isKindOfClass:[NSURL class]]) {
         _modifiedValue = [NSURL URLWithString:((UITextView *)[self.view viewWithTag:10000]).text];
     } else if ([_object isKindOfClass:[NSDate class]]) {

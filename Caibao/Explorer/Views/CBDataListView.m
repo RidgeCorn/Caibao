@@ -292,7 +292,7 @@
     
     [[cell.contentView subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
 
-    NSMutableArray *ary = [[contentDataArray objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
+    NSMutableArray *data = [[contentDataArray objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
     
     for (int i = 0; i < count; i++) {
         CGFloat cellW = [self _contentListViewCellWidth:i];
@@ -306,7 +306,7 @@
         
         UILabel *label = [[UILabel alloc] initWithFrame:view.frame];
         [label setNumberOfLines:1024];
-        label.text = [NSString stringWithFormat:@"%@", [ary objectAtIndex:i]];
+        label.text = [NSString stringWithFormat:@"%@", [data objectAtIndex:i]];
         label.center = CGPointMake(cellW / 2.0f, cellH / 2.0f);
         [label setTextAlignment:NSTextAlignmentCenter];
         

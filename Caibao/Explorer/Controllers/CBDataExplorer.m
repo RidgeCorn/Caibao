@@ -7,7 +7,7 @@
 //
 
 #import "CBDataExplorer.h"
-#import "CBStorageManager.h"
+#import "Caibao.h"
 #import "CBDataListsViewController.h"
 
 @interface CBDataExplorer () <UITableViewDataSource, UITableViewDelegate>
@@ -94,6 +94,11 @@
     LevelDB *ldb = [_databases objectForKey:_paths[indexPath.row]];
 
     [self.navigationController pushViewController:[[CBDataListsViewController alloc] initWithDatabaseName:ldb.name] animated:YES];
+}
+
+#pragma mark - Show Explorer
++ (void)showExplorer {
+    [[[UIApplication sharedApplication] keyWindow].rootViewController presentViewController:[[UINavigationController alloc] initWithRootViewController:[[CBDataExplorer alloc] initWithDatabases:[CBStorageManager sharedManager].databasesPool]] animated:YES completion:nil];
 }
 
 #pragma mark - Dismiss
