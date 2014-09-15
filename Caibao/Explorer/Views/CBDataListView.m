@@ -111,6 +111,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableView *target = nil;
+    
     if (tableView == _columnHeaderListView) {
         target = _contentListView;
     }else if (tableView == _contentListView) {
@@ -119,10 +120,12 @@
         target = nil;
     }
     
-    [target selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
-    
-    if ([_delegate respondsToSelector:@selector(listView:didSelectRowAtIndexPath:)]) {
+    if (target && [_delegate respondsToSelector:@selector(listView:didSelectRowAtIndexPath:)]) {
+        [target selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
+
         [_delegate listView:self didSelectRowAtIndexPath:indexPath];
+    } else {
+        [tableView deselectRowAtIndexPath:indexPath animated:NO];
     }
 }
 
