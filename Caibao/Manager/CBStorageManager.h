@@ -12,8 +12,8 @@
 @interface CBStorageManager : NSObject
 
 @property (nonatomic, readonly, getter = databasePath) NSString *databasePath; // Default is "NSCachesDirectory()/com.ridgecorn.CaibaoStorage.default"
-@property (nonatomic, getter = databaseDirectory, setter = setDatabaseDirectory:) NSString *databaseDirectory; // Default is "NSCachesDirectory()"
-@property (nonatomic, getter = databaseGroupName, setter = setDatabaseGroupName:) NSString *databaseGroupName; // Default is "com.ridgecorn.CaibaoStorage.default"
+@property (nonatomic, strong, getter = databaseDirectory, setter = setDatabaseDirectory:) NSString *databaseDirectory; // Default is "NSCachesDirectory()"
+@property (nonatomic, strong, getter = databaseGroupName, setter = setDatabaseGroupName:) NSString *databaseGroupName; // Default is "com.ridgecorn.CaibaoStorage.default"
 @property (nonatomic, getter = databaseOptions, setter = setDatabaseOptions:) LevelDBOptions _defaultDatabaseOptions; // Default using [LevelDB makeOptions]
 @property (nonatomic, readonly, getter=databasesPool) NSMutableDictionary *LDBPool;
 
