@@ -52,6 +52,8 @@
 
 - (NSArray *)objectsForClass:(Class)cls withCount:(NSInteger)count;
 - (id)objectForClass:(Class)cls;
+- (id)objectForClass:(Class)cls withKey:(NSString *)key;
+- (NSArray *)objectsForClass:(Class)cls withKeys:(NSArray *)keys;
 - (NSArray *)allObjectsForClass:(Class)cls;
 
 

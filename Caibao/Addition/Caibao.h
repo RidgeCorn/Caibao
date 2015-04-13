@@ -12,7 +12,9 @@
 @interface NSObject (Caibao)
 
 + (instancetype)cb_instance;
-+ (NSArray *)cb_instanceWithCount:(NSInteger)count;
++ (instancetype)cb_instanceWithKey:(NSString *)key;
++ (NSArray *)cb_instancesWithCount:(NSInteger)count;
++ (NSArray *)cb_instancesWithKeys:(NSArray *)keys;
 
 - (void)cb_save;
 

@@ -16,8 +16,16 @@
     return [StorageManager objectForClass:[self class]];
 }
 
-+ (NSArray *)cb_instanceWithCount:(NSInteger)count {
++ (instancetype)cb_instanceWithKey:(NSString *)key {
+    return [StorageManager objectForClass:[self class] withKey:key];
+}
+
++ (NSArray *)cb_instancesWithCount:(NSInteger)count {
     return [StorageManager objectsForClass:[self class] withCount:count];
+}
+
++ (NSArray *)cb_instancesWithKeys:(NSArray *)keys {
+    return [StorageManager objectsForClass:[self class] withKeys:keys];
 }
 
 - (void)cb_save {

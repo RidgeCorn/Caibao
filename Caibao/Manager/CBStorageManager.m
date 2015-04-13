@@ -380,6 +380,30 @@ static NSString * CBGenDatabaseStorageKey(const id obj) {
     return obj;
 }
 
+- (id)objectForClass:(Class)cls withKey:(NSString *)key {
+    LevelDB *db = [self databaseForClass:cls];
+    
+    id obj = [db objectForKey:key];
+    
+    CBSetStorageKeyToObject(key, obj);
+    
+    return obj;
+}
+
+- (NSArray *)objectsForClass:(Class)cls withKeys:(NSArray *)keys {
+    LevelDB *db = [self databaseForClass:cls];
+    
+    NSArray *objs = [db objectsForKeys:keys notFoundMarker:nil];
+    
+    NSInteger count = [objs count];
+    
+    for (NSInteger index = 0; index < count; index ++) {
+        CBSetStorageKeyToObject(keys[index], objs[index]);
+    }
+    
+    return objs;
+}
+
 - (NSArray *)allObjectsForClass:(Class)cls {
     return [self objectsForClass:cls withCount:-1];
 }
